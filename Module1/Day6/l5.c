@@ -47,7 +47,7 @@ int main() {
         printf("\n");
     }
     
-    // Perform search based on student name
+    
     char searchName[20];
     printf("Enter the name of the student to search: ");
     scanf("%s", searchName);
