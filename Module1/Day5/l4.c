@@ -17,7 +17,7 @@ int main() {
     // Dynamically allocate memory for n students
     students = (struct Student *)malloc(n * sizeof(struct Student));
 
-    // Read data for each student
+    // Read data 
     for (i = 0; i < n; i++) {
         printf("Enter details for student %d:\n", i + 1);
         printf("Name: ");
