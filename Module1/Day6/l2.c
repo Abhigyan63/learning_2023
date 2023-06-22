@@ -15,19 +15,17 @@ void initializeStudents(struct Student* students, int numStudents) {
 }
 
 int main() {
-    int numStudents;
+    int size;
     
     printf("Enter the number of students: ");
-    scanf("%d", &numStudents);
+    scanf("%d", &size);
     
-    struct Student students[numStudents];
+    struct Student students[size];
     
     // Initialize all members in the array of structures
-    initializeStudents(students, numStudents);
-    
-    // Print the initialized array of structures
+    initializeStudents(students, size); // Print the initialized array of structures
     printf("\nStudent Data:\n");
-    for (int i = 0; i < numStudents; i++) {
+    for (int i = 0; i < size; i++) {
         printf("Student %d:\n", i + 1);
         printf("Roll No: %d\n", students[i].rollno);
         printf("Name: %s\n", students[i].name);
